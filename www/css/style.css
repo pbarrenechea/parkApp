@@ -1,0 +1,41 @@
+/* Empty. Add your own CSS if you like */
+.scroll {
+  height: 100%;
+}
+
+.parkCard{
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.parkCard .item{
+  font-size: 13px;
+}
+
+
+#map {
+  width: 80%;
+  height: 50%;
+  margin: auto;
+}
+.buttonArea {
+  width: 80%;
+  margin: auto;
+}
+.tabs .tab-item .icon.park {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 100%;
+  background-image: url('../img/park.png');
+  background-size:contain;
+}
+
+.tabs .tab-item .icon.park-enabled {
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  background-image: url('../img/park-enabled.png');
+  background-size:contain;
+}
+

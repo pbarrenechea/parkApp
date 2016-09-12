@@ -1,0 +1,29 @@
+<ion-view view-title="Park">
+  <ion-content>
+  <div class="card parkCard">
+    <div class="item item-divider">
+      Parking information
+    </div>
+    <div class="item item-text-wrap">
+     X: {{ park.coordinates.lat }}
+     <hr>
+     Y: {{ park.coordinates.lon }}
+     <hr>
+     Time: {{ park.date | date : "medium" }}
+    </div>
+  </div>
+
+
+<div class="buttonArea">
+  <button class="button button-full button-positive parkBtn"  ng-click="park.park()">
+    Park
+  </button>
+
+  <button class="button button-full button-assertive resetBtn" ng-click="park.reset()">
+    Reset
+  </button>
+</div>
+  <gmap lat="{{ park.coordinates.lat }}" lon="{{ park.coordinates.lon }}"></gmap>
+
+  </ion-content>
+</ion-view>
